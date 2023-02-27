@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Text Auto Changing</title>
+        <link rel="stylesheet" href="Text.css">
+    </head>
+    <body>
+       <div class="header">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Poortfolio</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+            <img src="images/menu.png" class="menu-icon">
+        </nav>
+        <div class="text">
+            <h1>I'm <span class="auto-input"></span></h1>
+            <p>you can reach out to me if you need any help in making a<br> website for you or your business</p>
+            <a href="#">Contact Me</a>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <img src="images/user.png" class="user-img">
+       </div> 
+       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+       <script>
+        var typed=new Typed(".auto-input",{
+            strings:["Anna Amelia","Web Developer","UI Designer"],
+            typeSpeed:100,
+            backSpeed:100,
+            loop:true
+        })
+       </script>
+    </body>
+</html>
